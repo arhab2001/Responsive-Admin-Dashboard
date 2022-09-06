@@ -10,6 +10,7 @@ body{
     width: 100%;
     background: #e5e7e5;
     position: relative;
+    display: flex;
 }
 
 #menu{
@@ -67,4 +68,55 @@ body{
     color: rgb(red, green, blue);
     font-weight: 300px;
     transition: 0.3s ease;
+}
+
+#interface{
+    width: calc(100% - 300px);
+}
+
+#interface .navigation{
+    display: flex;
+    align-items: center;
+    justify-items: space-between;
+    background: #fff;
+    padding: 15px 30px;
+    border-bottom: 3px solid #594ef7;
+}
+
+#interface .navigation .search {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 14px;
+    border: 1px solid #d7dbe6;
+    border-radius: 4px;
+}
+
+#interface .navigation .search i{
+    margin: 14px;
+}
+
+#interface .navigation .search input{
+    border: none;
+    outline: none;
+    font-size: 14px ;
+}
+
+#interface .navigation .profil {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#interface .navigation .profil i{
+    margin-right: 20px;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+#interface .navigation .profil img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
 }
